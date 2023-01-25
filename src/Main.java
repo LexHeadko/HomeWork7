@@ -5,12 +5,12 @@ public class Main {
         task3();
         task4();
         task5();
-        /*task6();
-        task7();
-        task8();
-        task9();
-        task10();
-        task11();*/
+        task6();
+        //task7();
+        //task8();
+        //task9();
+        //task10();
+        //task11();
     }
 
     public static void task1() {
@@ -63,6 +63,20 @@ public class Main {
         int total = 12_000_000;
         int mouth = 0;
         while (contribution < total) {
+            mouth++;
+            contribution += contribution * 0.07;
+            if (mouth % 6 == 0) {
+                System.out.println("Месяц " + mouth + ", сумма накоплений равна " + contribution);
+            }
+        }
+    }
+
+    public static void task6 () {
+        System.out.println("Задача 6");
+        int contribution = 15_000;
+        int allMouth = 12 * 9;
+        int mouth = 0;
+        while (mouth <= allMouth) {
             mouth++;
             contribution += contribution * 0.07;
             if (mouth % 6 == 0) {

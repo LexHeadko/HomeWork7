@@ -4,8 +4,8 @@ public class Main {
         task2();
         task3();
         task4();
-        /*task5();
-        task6();
+        task5();
+        /*task6();
         task7();
         task8();
         task9();
@@ -47,7 +47,7 @@ public class Main {
         }
     }
     public static void task4() {
-        System.out.println("Задача 4x");
+        System.out.println("Задача 4");
         int contribution = 15_000;
         int total = 12_000_000;
         int mouth = 0;
@@ -55,6 +55,19 @@ public class Main {
             mouth++;
             contribution += contribution * 0.07;
             System.out.println("Месяц " + mouth + ", сумма накоплений равна " + contribution);
+        }
+    }
+    public static void task5() {
+        System.out.println("Задача 5");
+        int contribution = 15_000;
+        int total = 12_000_000;
+        int mouth = 0;
+        while (contribution < total) {
+            mouth++;
+            contribution += contribution * 0.07;
+            if (mouth % 6 == 0) {
+                System.out.println("Месяц " + mouth + ", сумма накоплений равна " + contribution);
+            }
         }
     }
 }

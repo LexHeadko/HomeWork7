@@ -41,11 +41,11 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задача 3");
-        int people = 12_000_000;
+        double people = 12_000_000;
         int birth = 17;
         int death = 8;
         for (int i = 0; i < 10; i++) {
-            people += (people / 1000 * (birth - death));
+            people += (people / 1000.0 * (birth - death));
             System.out.println("Год " + (i + 1) + " численность населениясостовляет " + people + " человек.");
         }
     }

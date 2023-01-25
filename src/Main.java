@@ -7,7 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
-        //task8();
+        task8();
         //task9();
         //task10();
         //task11();
@@ -98,4 +98,16 @@ public class Main {
             friday += 7;
         }
     }
+    public static void task8() {
+        System.out.println("Задача 8");
+        int now = 2023;
+        int past = now - 200;
+        int future = now + 100;
+        for (int i = past; i < future; i++) {
+            if (i % 79 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
 }
+
